@@ -17,5 +17,6 @@ h1 {
 }
 section {
   background-color: oldlace;
+  margin-bottom: 4rem;
 }
 </style>
