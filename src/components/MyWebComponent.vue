@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <section>
     <h1>My Vue Web Component</h1>
     <div>{{ msg }}</div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -11,8 +11,11 @@
   }
 </script>
 
-<style>
+<style scoped>
 h1 {
   color: green;
+}
+section {
+  background-color: oldlace;
 }
 </style>
