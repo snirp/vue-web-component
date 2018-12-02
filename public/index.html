@@ -16,36 +16,5 @@
     <my-web-component msg="attribute says hi!"></my-web-component>
     <!-- built files will be auto injected -->
 
-    <script>
-    // Check to see if `el` has been placed into a shadow root.
-    // If it has then add our CSS into that shadow root.
-    // Otherwise place the CSS into the `<head>` element.
-    function setCss(el, styleEl) {
-      let comp = (styleEl instanceof DocumentFragment ? styleEl.querySelector('style') : styleEl);
-      comp = comp.getAttribute('component');
-      if (!comp) {
-        throw new Error('Your `<style>` tag must set the attribute `component` to the component name. (Like: `<style component="my-element">`)');
-      }
-
-      let doc;
-      // istanbul ignore else
-      if (el.getRootNode) {
-        doc = el.getRootNode();
-        // istanbul ignore else
-        if (doc === document) {
-          doc = document.head;
-        }
-      }
-      else {
-        doc = document.head; // Shadow DOM isn't supported so place it in `<head>`
-      }
-      
-      // istanbul ignore else
-      if (!doc.querySelector(`style[component="${comp}"]`)) {
-        doc.appendChild(styleEl.cloneNode(true));
-      }
-    }
-    </script>
-
   </body>
 </html>
