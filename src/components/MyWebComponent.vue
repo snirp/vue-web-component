@@ -6,9 +6,12 @@
 </template>
 
 <script>
-  export default {
-    props: ['msg'] 
-  }
+import webpackConfig from '@vue/cli-service/webpack.config';
+console.log(webpackConfig)
+
+export default {
+  props: ['msg'] 
+}
 </script>
 
 <style scoped>

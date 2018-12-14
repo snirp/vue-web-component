@@ -1,3 +1,7 @@
+var webpackConfig = require("@vue/cli-service/webpack.config");
+
+
+
 function enableShadowCss(config) {
   const configs = [
     config.module.rule('vue').use('vue-loader'),
