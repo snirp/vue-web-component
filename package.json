@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build  --target wc --name my-web-component ./src/components/MyWebComponent.vue",
+    "build": "vue-cli-service build --target wc --name ceg-component ./src/components/MyWebComponent.vue",
+    "multiple": "vue-cli-service build --target wc --name ceg 'src/components/*.vue'",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
