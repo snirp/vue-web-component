@@ -2,6 +2,22 @@
 
 > [Medium - get started with vue web components](https://medium.com/@royprins/get-started-with-vue-web-components-593b3d5b3200)
 
+>[Vue - bundle that registers multiple web components](https://cli.vuejs.org/guide/build-targets.html#bundle-that-registers-multiple-web-components)
+
+## Render
+> one web component
+```
+yarn build
+```
+> multiple web components
+```
+yarn multiple
+```
+> async web components
+```
+yarn async
+```
+
 ## Project setup
 ```
 npm install
