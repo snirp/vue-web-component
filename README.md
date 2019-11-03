@@ -1,5 +1,7 @@
 # web-component-project
 
+> [Medium - get started with vue web components](https://medium.com/@royprins/get-started-with-vue-web-components-593b3d5b3200)
+
 ## Project setup
 ```
 npm install
