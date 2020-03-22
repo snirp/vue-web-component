@@ -7,7 +7,8 @@
 
 <script>
 export default {
-  props: ['msg'] 
+  name: "Ceg-my-web-component",
+  props: ['msg']
 }
 </script>
 

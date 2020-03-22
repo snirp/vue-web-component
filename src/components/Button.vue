@@ -1,12 +1,12 @@
 <template>
   <button type="button">
     <slot>{{text}}</slot>
-    siempre
   </button>
 </template>
 
 <script>
 export default {
+  name: "Ceg-button",
   props: ['text']
 }
 </script>

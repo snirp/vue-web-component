@@ -5,15 +5,15 @@
 >[Vue - bundle that registers multiple web components](https://cli.vuejs.org/guide/build-targets.html#bundle-that-registers-multiple-web-components)
 
 ## Render
-> one web component
+> one web component (one by one)
 ```
 yarn build
 ```
-> multiple web components
+> multiple web components (all components will be created within ceg.js)
 ```
 yarn multiple
 ```
-> async web components
+> async web components (all components will be created individually)
 ```
 yarn async
 ```
