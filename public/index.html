@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>My Vue web component</title>
     <style>
+      :root {
+        --color-primary: #31ab6f;
+      }
       h3 {
         color: red;
         margin: 0;
@@ -14,14 +17,20 @@
   </head>
   <body>
     <noscript><strong>Please activate javascript.</strong></noscript>
-    
+
+    <h1>Main menu</h1>
+    <button onclick="toggleMenu(true)">show</button>
+    <ceg-main-menu onclick="toggleMenu(false)">1</ceg-main-menu>
+
+    <!-- <hr>
+
     <h1>my-web-component</h1>
     <my-web-component msg="attribute says hi!"></my-web-component>
-    
+
     <h1>Button</h1>
     <ceg-button>cuac</ceg-button>
     <button type="button">Click</button>
-    
+
     <h3>h3 Test (red)</h3>
 
     <section>
@@ -29,6 +38,11 @@
         <h3>h3 Test (red)</h3>
         <ceg-button>close</ceg-button>
       </ceg-alert>
-    </section>
+    </section> -->
+    <script>
+      function toggleMenu(val) {
+        document.querySelector('ceg-main-menu').show = val
+      }
+    </script>
   </body>
 </html>
